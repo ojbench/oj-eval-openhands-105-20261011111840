@@ -1,10 +1,10 @@
-CXX = g++
-CXXFLAGS = -std=c++11 -O2 -Wall
+CC = gcc
+CFLAGS = -std=c99 -O2 -Wall
 TARGET = code
 SOURCE = solution.cpp
 
 $(TARGET): $(SOURCE)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SOURCE)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SOURCE)
 
 clean:
 	rm -f $(TARGET)
