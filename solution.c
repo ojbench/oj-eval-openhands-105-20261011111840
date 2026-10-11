@@ -1,12 +1,13 @@
 #include <stdio.h>
 
+double dp[21];
+
 int main() {
     int n, m;
     scanf("%d %d", &n, &m);
     
     int target = n - m;
     
-    double dp[21];
     int i;
     for (i = 0; i <= n; i++) {
         dp[i] = 0.0;
